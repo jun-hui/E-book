@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		477262DF8FF6EA4E384C2CEC /* libPods-E-book.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B048A1AEA815F939942C0DB0 /* libPods-E-book.a */; };
+		6D0F42D51E97884700489BAB /* BookNamesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F42CD1E97884700489BAB /* BookNamesTableViewController.m */; };
+		6D0F42D61E97884700489BAB /* BookViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F42CF1E97884700489BAB /* BookViewCell.m */; };
+		6D0F42D71E97884700489BAB /* BookViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D0F42D01E97884700489BAB /* BookViewCell.xib */; };
+		6D0F42D81E97884700489BAB /* CatalogCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F42D21E97884700489BAB /* CatalogCollectionViewController.m */; };
+		6D0F42D91E97884700489BAB /* ReadBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0F42D41E97884700489BAB /* ReadBookViewController.m */; };
+		6D6056421E9F4206007B34D0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6056411E9F4206007B34D0 /* icon.png */; };
+		6D97AA5D1E9495E4003F861F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D97AA5C1E9495E4003F861F /* main.m */; };
+		6D97AA601E9495E5003F861F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D97AA5F1E9495E5003F861F /* AppDelegate.m */; };
+		6D97AA631E9495E5003F861F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D97AA621E9495E5003F861F /* ViewController.m */; };
+		6D97AA661E9495E6003F861F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AA641E9495E6003F861F /* Main.storyboard */; };
+		6D97AA681E9495E6003F861F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AA671E9495E6003F861F /* Assets.xcassets */; };
+		6D97AA6B1E9495E7003F861F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AA691E9495E7003F861F /* LaunchScreen.storyboard */; };
+		6D97AA761E9495ED003F861F /* E_bookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D97AA751E9495ED003F861F /* E_bookTests.m */; };
+		6D97AA811E9495ED003F861F /* E_bookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D97AA801E9495ED003F861F /* E_bookUITests.m */; };
+		6D97AA931E949681003F861F /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AA8F1E949681003F861F /* button.png */; };
+		6D97AA941E949681003F861F /* shelf_row.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AA901E949681003F861F /* shelf_row.png */; };
+		6D97AA951E949681003F861F /* shelf_top.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AA911E949681003F861F /* shelf_top.png */; };
+		6D97AAA11E94A380003F861F /* 盗墓笔记BookSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AA9F1E94A380003F861F /* 盗墓笔记BookSmall.png */; };
+		6D97AAAD1E94CE80003F861F /* 盗墓笔记 01 七星鲁王宫.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AAA41E94CE80003F861F /* 盗墓笔记 01 七星鲁王宫.txt */; };
+		6D97AAAF1E94CE80003F861F /* 盗墓笔记 03 秦岭神木.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AAA61E94CE80003F861F /* 盗墓笔记 03 秦岭神木.txt */; };
+		6D97AAB01E94CE80003F861F /* 盗墓笔记 04 云顶天宫.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AAA71E94CE80003F861F /* 盗墓笔记 04 云顶天宫.txt */; };
+		6D97AAB11E94CE80003F861F /* 盗墓笔记 05 蛇沼鬼城.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AAA81E94CE80003F861F /* 盗墓笔记 05 蛇沼鬼城.txt */; };
+		6D97AAB21E94CE80003F861F /* 盗墓笔记 06 谜海归巢.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AAA91E94CE80003F861F /* 盗墓笔记 06 谜海归巢.txt */; };
+		6D97AAB31E94CE80003F861F /* 盗墓笔记 07 阴山古楼.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AAAA1E94CE80003F861F /* 盗墓笔记 07 阴山古楼.txt */; };
+		6D97AAB41E94CE80003F861F /* 盗墓笔记 08 邛笼石影.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AAAB1E94CE80003F861F /* 盗墓笔记 08 邛笼石影.txt */; };
+		6D97AAB51E94CE80003F861F /* 盗墓笔记 09 (大结局).txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AAAC1E94CE80003F861F /* 盗墓笔记 09 (大结局).txt */; };
+		6D97AABC1E94D977003F861F /* 盗墓笔记 02 怒海潜沙.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D97AABB1E94D977003F861F /* 盗墓笔记 02 怒海潜沙.txt */; };
+		6DEDFB511E9B4E7600AFF5B5 /* BridgingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEDFB501E9B4E7600AFF5B5 /* BridgingFile.swift */; };
+		6DEDFB551E9B642100AFF5B5 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEDFB541E9B642100AFF5B5 /* BaseNavigationController.m */; };
+		6DEDFB581E9B81F900AFF5B5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEDFB571E9B81F900AFF5B5 /* BaseViewController.m */; };
+		6DEDFBB41E9E0D6F00AFF5B5 /* EBTimerApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEDFBB31E9E0D6F00AFF5B5 /* EBTimerApplication.m */; };
+		6DEDFBB71E9E225700AFF5B5 /* BookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEDFBB61E9E225700AFF5B5 /* BookmarkViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D97AA721E9495EC003F861F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D97AA501E9495E4003F861F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D97AA571E9495E4003F861F;
+			remoteInfo = "E-book";
+		};
+		6D97AA7D1E9495ED003F861F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D97AA501E9495E4003F861F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D97AA571E9495E4003F861F;
+			remoteInfo = "E-book";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6D0F429A1E9763FF00489BAB /* E-BookPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "E-BookPrefixHeader.pch"; sourceTree = "<group>"; };
+		6D0F42CC1E97884700489BAB /* BookNamesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookNamesTableViewController.h; sourceTree = "<group>"; };
+		6D0F42CD1E97884700489BAB /* BookNamesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookNamesTableViewController.m; sourceTree = "<group>"; };
+		6D0F42CE1E97884700489BAB /* BookViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewCell.h; sourceTree = "<group>"; };
+		6D0F42CF1E97884700489BAB /* BookViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewCell.m; sourceTree = "<group>"; };
+		6D0F42D01E97884700489BAB /* BookViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookViewCell.xib; sourceTree = "<group>"; };
+		6D0F42D11E97884700489BAB /* CatalogCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogCollectionViewController.h; sourceTree = "<group>"; };
+		6D0F42D21E97884700489BAB /* CatalogCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogCollectionViewController.m; sourceTree = "<group>"; };
+		6D0F42D31E97884700489BAB /* ReadBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadBookViewController.h; sourceTree = "<group>"; };
+		6D0F42D41E97884700489BAB /* ReadBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadBookViewController.m; sourceTree = "<group>"; };
+		6D6056411E9F4206007B34D0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		6D97AA581E9495E4003F861F /* E-book.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-book.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D97AA5C1E9495E4003F861F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D97AA5E1E9495E5003F861F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6D97AA5F1E9495E5003F861F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6D97AA611E9495E5003F861F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6D97AA621E9495E5003F861F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6D97AA651E9495E6003F861F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D97AA671E9495E6003F861F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D97AA6A1E9495E7003F861F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D97AA6C1E9495E8003F861F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D97AA711E9495EC003F861F /* E-bookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-bookTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D97AA751E9495ED003F861F /* E_bookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = E_bookTests.m; sourceTree = "<group>"; };
+		6D97AA771E9495ED003F861F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D97AA7C1E9495ED003F861F /* E-bookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "E-bookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D97AA801E9495ED003F861F /* E_bookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = E_bookUITests.m; sourceTree = "<group>"; };
+		6D97AA821E9495EF003F861F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D97AA8F1E949681003F861F /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		6D97AA901E949681003F861F /* shelf_row.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf_row.png; sourceTree = "<group>"; };
+		6D97AA911E949681003F861F /* shelf_top.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shelf_top.png; sourceTree = "<group>"; };
+		6D97AA9F1E94A380003F861F /* 盗墓笔记BookSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "盗墓笔记BookSmall.png"; sourceTree = "<group>"; };
+		6D97AAA41E94CE80003F861F /* 盗墓笔记 01 七星鲁王宫.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "盗墓笔记 01 七星鲁王宫.txt"; sourceTree = "<group>"; };
+		6D97AAA61E94CE80003F861F /* 盗墓笔记 03 秦岭神木.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "盗墓笔记 03 秦岭神木.txt"; sourceTree = "<group>"; };
+		6D97AAA71E94CE80003F861F /* 盗墓笔记 04 云顶天宫.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "盗墓笔记 04 云顶天宫.txt"; sourceTree = "<group>"; };
+		6D97AAA81E94CE80003F861F /* 盗墓笔记 05 蛇沼鬼城.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "盗墓笔记 05 蛇沼鬼城.txt"; sourceTree = "<group>"; };
+		6D97AAA91E94CE80003F861F /* 盗墓笔记 06 谜海归巢.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "盗墓笔记 06 谜海归巢.txt"; sourceTree = "<group>"; };
+		6D97AAAA1E94CE80003F861F /* 盗墓笔记 07 阴山古楼.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "盗墓笔记 07 阴山古楼.txt"; sourceTree = "<group>"; };
+		6D97AAAB1E94CE80003F861F /* 盗墓笔记 08 邛笼石影.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "盗墓笔记 08 邛笼石影.txt"; sourceTree = "<group>"; };
+		6D97AAAC1E94CE80003F861F /* 盗墓笔记 09 (大结局).txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "盗墓笔记 09 (大结局).txt"; sourceTree = "<group>"; };
+		6D97AABB1E94D977003F861F /* 盗墓笔记 02 怒海潜沙.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "盗墓笔记 02 怒海潜沙.txt"; sourceTree = "<group>"; };
+		6DEDFB501E9B4E7600AFF5B5 /* BridgingFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgingFile.swift; sourceTree = "<group>"; };
+		6DEDFB521E9B4EF000AFF5B5 /* E-book-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "E-book-Bridging-Header.h"; sourceTree = "<group>"; };
+		6DEDFB531E9B642100AFF5B5 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		6DEDFB541E9B642100AFF5B5 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		6DEDFB561E9B81F900AFF5B5 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		6DEDFB571E9B81F900AFF5B5 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		6DEDFBB21E9E0D6F00AFF5B5 /* EBTimerApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBTimerApplication.h; sourceTree = "<group>"; };
+		6DEDFBB31E9E0D6F00AFF5B5 /* EBTimerApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBTimerApplication.m; sourceTree = "<group>"; };
+		6DEDFBB51E9E225700AFF5B5 /* BookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarkViewController.h; sourceTree = "<group>"; };
+		6DEDFBB61E9E225700AFF5B5 /* BookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarkViewController.m; sourceTree = "<group>"; };
+		72F84D7C4994CE0B84A0240D /* Pods-E-book.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-book.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E-book/Pods-E-book.debug.xcconfig"; sourceTree = "<group>"; };
+		B048A1AEA815F939942C0DB0 /* libPods-E-book.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-E-book.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C477E47A2841CF1FF881FBCA /* Pods-E-book.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-book.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-book/Pods-E-book.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D97AA551E9495E4003F861F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				477262DF8FF6EA4E384C2CEC /* libPods-E-book.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D97AA6E1E9495EC003F861F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D97AA791E9495ED003F861F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58737E07E0A953575F2DA654 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72F84D7C4994CE0B84A0240D /* Pods-E-book.debug.xcconfig */,
+				C477E47A2841CF1FF881FBCA /* Pods-E-book.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D0F429B1E97666600489BAB /* BaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				6DEDFB531E9B642100AFF5B5 /* BaseNavigationController.h */,
+				6DEDFB541E9B642100AFF5B5 /* BaseNavigationController.m */,
+				6DEDFB561E9B81F900AFF5B5 /* BaseViewController.h */,
+				6DEDFB571E9B81F900AFF5B5 /* BaseViewController.m */,
+				6DEDFB501E9B4E7600AFF5B5 /* BridgingFile.swift */,
+				6DEDFB521E9B4EF000AFF5B5 /* E-book-Bridging-Header.h */,
+			);
+			name = BaseNavigationController;
+			path = "E-book/BaseNavigationController";
+			sourceTree = SOURCE_ROOT;
+		};
+		6D97AA4F1E9495E4003F861F = {
+			isa = PBXGroup;
+			children = (
+				6D97AA5A1E9495E4003F861F /* E-book */,
+				6D97AA741E9495ED003F861F /* E-bookTests */,
+				6D97AA7F1E9495ED003F861F /* E-bookUITests */,
+				6D97AA591E9495E4003F861F /* Products */,
+				58737E07E0A953575F2DA654 /* Pods */,
+				9C46BA577DAD73346545126C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D97AA591E9495E4003F861F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D97AA581E9495E4003F861F /* E-book.app */,
+				6D97AA711E9495EC003F861F /* E-bookTests.xctest */,
+				6D97AA7C1E9495ED003F861F /* E-bookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D97AA5A1E9495E4003F861F /* E-book */ = {
+			isa = PBXGroup;
+			children = (
+				6D97AAA21E94CE80003F861F /* Books */,
+				6D97AA5E1E9495E5003F861F /* AppDelegate.h */,
+				6D97AA5F1E9495E5003F861F /* AppDelegate.m */,
+				6D97AA611E9495E5003F861F /* ViewController.h */,
+				6D97AA621E9495E5003F861F /* ViewController.m */,
+				6D97AA641E9495E6003F861F /* Main.storyboard */,
+				6D0F429B1E97666600489BAB /* BaseNavigationController */,
+				6D97AA921E949681003F861F /* RootViewController */,
+				6D97AA8E1E949681003F861F /* Images */,
+				6D97AA671E9495E6003F861F /* Assets.xcassets */,
+				6D0F429A1E9763FF00489BAB /* E-BookPrefixHeader.pch */,
+				6D97AA691E9495E7003F861F /* LaunchScreen.storyboard */,
+				6D97AA6C1E9495E8003F861F /* Info.plist */,
+				6D97AA5B1E9495E4003F861F /* Supporting Files */,
+			);
+			path = "E-book";
+			sourceTree = "<group>";
+		};
+		6D97AA5B1E9495E4003F861F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D97AA5C1E9495E4003F861F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D97AA741E9495ED003F861F /* E-bookTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D97AA751E9495ED003F861F /* E_bookTests.m */,
+				6D97AA771E9495ED003F861F /* Info.plist */,
+			);
+			path = "E-bookTests";
+			sourceTree = "<group>";
+		};
+		6D97AA7F1E9495ED003F861F /* E-bookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D97AA801E9495ED003F861F /* E_bookUITests.m */,
+				6D97AA821E9495EF003F861F /* Info.plist */,
+			);
+			path = "E-bookUITests";
+			sourceTree = "<group>";
+		};
+		6D97AA8E1E949681003F861F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6D6056411E9F4206007B34D0 /* icon.png */,
+				6D97AA9F1E94A380003F861F /* 盗墓笔记BookSmall.png */,
+				6D97AA8F1E949681003F861F /* button.png */,
+				6D97AA901E949681003F861F /* shelf_row.png */,
+				6D97AA911E949681003F861F /* shelf_top.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		6D97AA921E949681003F861F /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6DEDFBB21E9E0D6F00AFF5B5 /* EBTimerApplication.h */,
+				6DEDFBB31E9E0D6F00AFF5B5 /* EBTimerApplication.m */,
+				6D0F42D11E97884700489BAB /* CatalogCollectionViewController.h */,
+				6D0F42D21E97884700489BAB /* CatalogCollectionViewController.m */,
+				6D0F42CE1E97884700489BAB /* BookViewCell.h */,
+				6D0F42CF1E97884700489BAB /* BookViewCell.m */,
+				6D0F42D01E97884700489BAB /* BookViewCell.xib */,
+				6D0F42CC1E97884700489BAB /* BookNamesTableViewController.h */,
+				6D0F42CD1E97884700489BAB /* BookNamesTableViewController.m */,
+				6D0F42D31E97884700489BAB /* ReadBookViewController.h */,
+				6D0F42D41E97884700489BAB /* ReadBookViewController.m */,
+				6DEDFBB51E9E225700AFF5B5 /* BookmarkViewController.h */,
+				6DEDFBB61E9E225700AFF5B5 /* BookmarkViewController.m */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		6D97AAA21E94CE80003F861F /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				6D97AAA31E94CE80003F861F /* 盗墓笔记全集（共9卷） */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		6D97AAA31E94CE80003F861F /* 盗墓笔记全集（共9卷） */ = {
+			isa = PBXGroup;
+			children = (
+				6D97AAA41E94CE80003F861F /* 盗墓笔记 01 七星鲁王宫.txt */,
+				6D97AABB1E94D977003F861F /* 盗墓笔记 02 怒海潜沙.txt */,
+				6D97AAA61E94CE80003F861F /* 盗墓笔记 03 秦岭神木.txt */,
+				6D97AAA71E94CE80003F861F /* 盗墓笔记 04 云顶天宫.txt */,
+				6D97AAA81E94CE80003F861F /* 盗墓笔记 05 蛇沼鬼城.txt */,
+				6D97AAA91E94CE80003F861F /* 盗墓笔记 06 谜海归巢.txt */,
+				6D97AAAA1E94CE80003F861F /* 盗墓笔记 07 阴山古楼.txt */,
+				6D97AAAB1E94CE80003F861F /* 盗墓笔记 08 邛笼石影.txt */,
+				6D97AAAC1E94CE80003F861F /* 盗墓笔记 09 (大结局).txt */,
+			);
+			path = "盗墓笔记全集（共9卷）";
+			sourceTree = "<group>";
+		};
+		9C46BA577DAD73346545126C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B048A1AEA815F939942C0DB0 /* libPods-E-book.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D97AA571E9495E4003F861F /* E-book */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D97AA851E9495EF003F861F /* Build configuration list for PBXNativeTarget "E-book" */;
+			buildPhases = (
+				D0BA7DEE3B868C559C69D9AD /* [CP] Check Pods Manifest.lock */,
+				6D97AA541E9495E4003F861F /* Sources */,
+				6D97AA551E9495E4003F861F /* Frameworks */,
+				6D97AA561E9495E4003F861F /* Resources */,
+				E5CEB83C97BA0E266687BD48 /* [CP] Embed Pods Frameworks */,
+				CEAAE9717DE2CF3AE112225C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "E-book";
+			productName = "E-book";
+			productReference = 6D97AA581E9495E4003F861F /* E-book.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D97AA701E9495EC003F861F /* E-bookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D97AA881E9495EF003F861F /* Build configuration list for PBXNativeTarget "E-bookTests" */;
+			buildPhases = (
+				6D97AA6D1E9495EC003F861F /* Sources */,
+				6D97AA6E1E9495EC003F861F /* Frameworks */,
+				6D97AA6F1E9495EC003F861F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D97AA731E9495EC003F861F /* PBXTargetDependency */,
+			);
+			name = "E-bookTests";
+			productName = "E-bookTests";
+			productReference = 6D97AA711E9495EC003F861F /* E-bookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D97AA7B1E9495ED003F861F /* E-bookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D97AA8B1E9495EF003F861F /* Build configuration list for PBXNativeTarget "E-bookUITests" */;
+			buildPhases = (
+				6D97AA781E9495ED003F861F /* Sources */,
+				6D97AA791E9495ED003F861F /* Frameworks */,
+				6D97AA7A1E9495ED003F861F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D97AA7E1E9495ED003F861F /* PBXTargetDependency */,
+			);
+			name = "E-bookUITests";
+			productName = "E-bookUITests";
+			productReference = 6D97AA7C1E9495ED003F861F /* E-bookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D97AA501E9495E4003F861F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "小王";
+				TargetAttributes = {
+					6D97AA571E9495E4003F861F = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 95U6WPM94S;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					6D97AA701E9495EC003F861F = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6D97AA571E9495E4003F861F;
+					};
+					6D97AA7B1E9495ED003F861F = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6D97AA571E9495E4003F861F;
+					};
+				};
+			};
+			buildConfigurationList = 6D97AA531E9495E4003F861F /* Build configuration list for PBXProject "E-book" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D97AA4F1E9495E4003F861F;
+			productRefGroup = 6D97AA591E9495E4003F861F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D97AA571E9495E4003F861F /* E-book */,
+				6D97AA701E9495EC003F861F /* E-bookTests */,
+				6D97AA7B1E9495ED003F861F /* E-bookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D97AA561E9495E4003F861F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D97AABC1E94D977003F861F /* 盗墓笔记 02 怒海潜沙.txt in Resources */,
+				6D97AAA11E94A380003F861F /* 盗墓笔记BookSmall.png in Resources */,
+				6D97AAB41E94CE80003F861F /* 盗墓笔记 08 邛笼石影.txt in Resources */,
+				6D97AAAD1E94CE80003F861F /* 盗墓笔记 01 七星鲁王宫.txt in Resources */,
+				6D97AAB51E94CE80003F861F /* 盗墓笔记 09 (大结局).txt in Resources */,
+				6D97AAB11E94CE80003F861F /* 盗墓笔记 05 蛇沼鬼城.txt in Resources */,
+				6D97AA941E949681003F861F /* shelf_row.png in Resources */,
+				6D97AA6B1E9495E7003F861F /* LaunchScreen.storyboard in Resources */,
+				6D0F42D71E97884700489BAB /* BookViewCell.xib in Resources */,
+				6D97AA931E949681003F861F /* button.png in Resources */,
+				6D97AAB31E94CE80003F861F /* 盗墓笔记 07 阴山古楼.txt in Resources */,
+				6D6056421E9F4206007B34D0 /* icon.png in Resources */,
+				6D97AAB21E94CE80003F861F /* 盗墓笔记 06 谜海归巢.txt in Resources */,
+				6D97AAB01E94CE80003F861F /* 盗墓笔记 04 云顶天宫.txt in Resources */,
+				6D97AA681E9495E6003F861F /* Assets.xcassets in Resources */,
+				6D97AAAF1E94CE80003F861F /* 盗墓笔记 03 秦岭神木.txt in Resources */,
+				6D97AA951E949681003F861F /* shelf_top.png in Resources */,
+				6D97AA661E9495E6003F861F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D97AA6F1E9495EC003F861F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D97AA7A1E9495ED003F861F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEAAE9717DE2CF3AE112225C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E-book/Pods-E-book-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0BA7DEE3B868C559C69D9AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5CEB83C97BA0E266687BD48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-E-book/Pods-E-book-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D97AA541E9495E4003F861F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D97AA631E9495E5003F861F /* ViewController.m in Sources */,
+				6DEDFB581E9B81F900AFF5B5 /* BaseViewController.m in Sources */,
+				6DEDFB511E9B4E7600AFF5B5 /* BridgingFile.swift in Sources */,
+				6D97AA601E9495E5003F861F /* AppDelegate.m in Sources */,
+				6D97AA5D1E9495E4003F861F /* main.m in Sources */,
+				6D0F42D81E97884700489BAB /* CatalogCollectionViewController.m in Sources */,
+				6DEDFB551E9B642100AFF5B5 /* BaseNavigationController.m in Sources */,
+				6D0F42D51E97884700489BAB /* BookNamesTableViewController.m in Sources */,
+				6DEDFBB71E9E225700AFF5B5 /* BookmarkViewController.m in Sources */,
+				6D0F42D91E97884700489BAB /* ReadBookViewController.m in Sources */,
+				6DEDFBB41E9E0D6F00AFF5B5 /* EBTimerApplication.m in Sources */,
+				6D0F42D61E97884700489BAB /* BookViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D97AA6D1E9495EC003F861F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D97AA761E9495ED003F861F /* E_bookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D97AA781E9495ED003F861F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D97AA811E9495ED003F861F /* E_bookUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D97AA731E9495EC003F861F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D97AA571E9495E4003F861F /* E-book */;
+			targetProxy = 6D97AA721E9495EC003F861F /* PBXContainerItemProxy */;
+		};
+		6D97AA7E1E9495ED003F861F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D97AA571E9495E4003F861F /* E-book */;
+			targetProxy = 6D97AA7D1E9495ED003F861F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D97AA641E9495E6003F861F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D97AA651E9495E6003F861F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D97AA691E9495E7003F861F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D97AA6A1E9495E7003F861F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D97AA831E9495EF003F861F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6D97AA841E9495EF003F861F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D97AA861E9495EF003F861F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F84D7C4994CE0B84A0240D /* Pods-E-book.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 95U6WPM94S;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/E-book/E-BookPrefixHeader.pch";
+				INFOPLIST_FILE = "E-book/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ZhejiangMengShun.E-book";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "E-book/BaseNavigationController/E-book-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/Frameworks";
+			};
+			name = Debug;
+		};
+		6D97AA871E9495EF003F861F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C477E47A2841CF1FF881FBCA /* Pods-E-book.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 95U6WPM94S;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/E-book/E-BookPrefixHeader.pch";
+				INFOPLIST_FILE = "E-book/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ZhejiangMengShun.E-book";
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "E-book/BaseNavigationController/E-book-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/Frameworks";
+			};
+			name = Release;
+		};
+		6D97AA891E9495EF003F861F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "E-bookTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ZhejiangMengShun.E-bookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-book.app/E-book";
+			};
+			name = Debug;
+		};
+		6D97AA8A1E9495EF003F861F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "E-bookTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ZhejiangMengShun.E-bookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/E-book.app/E-book";
+			};
+			name = Release;
+		};
+		6D97AA8C1E9495EF003F861F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "E-bookUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ZhejiangMengShun.E-bookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "E-book";
+			};
+			name = Debug;
+		};
+		6D97AA8D1E9495EF003F861F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "E-bookUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ZhejiangMengShun.E-bookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "E-book";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D97AA531E9495E4003F861F /* Build configuration list for PBXProject "E-book" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D97AA831E9495EF003F861F /* Debug */,
+				6D97AA841E9495EF003F861F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D97AA851E9495EF003F861F /* Build configuration list for PBXNativeTarget "E-book" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D97AA861E9495EF003F861F /* Debug */,
+				6D97AA871E9495EF003F861F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D97AA881E9495EF003F861F /* Build configuration list for PBXNativeTarget "E-bookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D97AA891E9495EF003F861F /* Debug */,
+				6D97AA8A1E9495EF003F861F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D97AA8B1E9495EF003F861F /* Build configuration list for PBXNativeTarget "E-bookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D97AA8C1E9495EF003F861F /* Debug */,
+				6D97AA8D1E9495EF003F861F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D97AA501E9495E4003F861F /* Project object */;
+}

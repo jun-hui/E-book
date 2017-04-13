@@ -1,0 +1,15 @@
+PODS:
+  - KMNavigationBarTransition (1.0.0)
+  - MBProgressHUD+DK (1.1.1)
+
+DEPENDENCIES:
+  - KMNavigationBarTransition
+  - MBProgressHUD+DK
+
+SPEC CHECKSUMS:
+  KMNavigationBarTransition: b3fb8337f7a1e4542add07fd6c45fb9980794d59
+  MBProgressHUD+DK: 9394614f7106e640784d044bc19512c1167e9e97
+
+PODFILE CHECKSUM: 032c0619ed3f2ec72286995c905f334d58eef8b6
+
+COCOAPODS: 1.2.0

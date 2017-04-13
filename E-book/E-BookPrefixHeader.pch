@@ -1,0 +1,23 @@
+//
+//  E-BookPrefixHeader.pch
+//  E-book
+//
+//  Created by 小王 on 2017/4/7.
+//  Copyright © 2017年 小王. All rights reserved.
+//
+
+#ifndef E_BookPrefixHeader_pch
+#define E_BookPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define UIColorFromRGB(rgbValue,colorAlpha) [UIColor colorWithRed:((CGFloat)((rgbValue & 0xFF0000) >>16))/255.0 green:((CGFloat)((rgbValue & 0xFF00) >> 8))/255.0 blue:((CGFloat)(rgbValue & 0xFF))/255.0 alpha:(CGFloat)colorAlpha]
+
+//#import "RainbowNavigation-Swift.h"
+#import <MBProgressHUD+DK/DKProgressHUD.h>
+
+#endif /* E_BookPrefixHeader_pch */
