@@ -26,7 +26,7 @@ static NSInteger const sectionNum      = 3;
     UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc]init];
     //设置布局方向为垂直流布局
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
-    layout.itemSize = CGSizeMake(ScreenWidth/sectionNum - leading*(sectionNum+1), 120);
+    layout.itemSize = CGSizeMake((ScreenWidth - leading*(sectionNum+1))/sectionNum, 120);
     layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
     //两个cell之间的间距（同一行的cell的间距）
     layout.minimumInteritemSpacing = 0;
